@@ -1,0 +1,161 @@
+@import "../../../styles/_root.scss";
+
+.box {
+    // background-color: red !important;
+    background-color: white !important;
+    padding: 0.5rem 2rem 2rem 2rem;
+    margin-top: 12rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+
+    .box1 {
+        margin: 1rem 0;
+
+        .typography {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $primary-color;
+        }
+    }
+
+    .box2 {
+        // background-color: red !important;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+
+        &Left {
+            width: 35%;
+            // border: 1px solid black;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+
+            .textField {
+                margin-bottom: 1rem;
+
+                .resize {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .boxChild {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                margin-top: 2rem;
+                margin-bottom: 0.5rem;
+
+                .btn {
+                    font-size: 1.2rem;
+                    text-transform: none;
+                    font-weight: 550;
+
+                    margin: 0 0.5rem;
+                    padding: 0.6rem 1.5rem;
+                }
+            }
+        }
+
+        &Right {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+            .summary {
+                width: 100%;
+                height: 12rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 2rem 0;
+                // background-color: red !important;
+
+                .typography {
+                    color: rgb(55, 55, 55);
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+
+                .number {
+                    color: $primary-color;
+                    font-size: 3rem;
+                    font-weight: 700;
+
+                }
+            }
+
+            .detailsResult {
+                margin: 0 2rem;
+                background-color: rgba(236, 129, 129, 0.1);
+                border: 1px solid $primary-color;
+                border-radius: 10px;
+                margin-bottom: 3rem;
+                .principal {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1rem 2rem;
+                    .typography {
+                        color: rgb(55, 55, 55);
+                        font-size: 1.3rem;
+                    }
+
+                    .number {
+                        color: rgb(55, 55, 55);
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                }
+
+                .interest {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1rem 2rem;
+                    .typography {
+                        color: rgb(55, 55, 55);
+                        font-size: 1.3rem;
+                    }
+
+                    .number {
+                        color: rgb(55, 55, 55);
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                }
+                .both {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1rem 2rem;
+                    .typography {
+                        color: rgb(55, 55, 55);
+                        font-size: 1.3rem;
+                    }
+
+                    .number {
+                        color: $primary-color;
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    .boxNote {
+        margin-top: 2rem;
+        .typography {
+            font-size: 1.3rem;
+            color: $text-color;
+
+        }
+    }
+}

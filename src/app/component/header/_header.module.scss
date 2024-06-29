@@ -1,0 +1,53 @@
+@import "../../../styles/_root.scss";
+
+.appbar {
+    height: 6.4rem !important;
+
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background-image: none;
+
+    margin-top: 1.5rem;
+
+    .container {
+        // width: 100%;
+        height: 100% !important;
+        box-sizing: border-box;
+
+        .toolbar {
+            background-color: white;
+            // box-shadow: 0 2px 4px 0 rgba($primary-color, 0.15);
+            box-shadow: 0 -1px 4px 0 rgba($primary-color, 0.15),
+                0 1px 4px 0 rgba($primary-color, 0.15);
+            border-radius: 10px;
+
+            .box {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .box2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .bell {
+                        font-size: 2rem;
+                        color: $primary-color;
+
+                        cursor: pointer;
+                    }
+
+                    .btn {
+                        font-size: 1.2rem;
+                        text-transform: none;
+                        font-weight: 550;
+
+                        margin: 0 0.5rem;
+                        padding: 0.6rem 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
